@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Emanuel Domingos">
+    <meta name="description" content="Formulário de exemplo">
+    <title>Formulário</title>
+</head>
+<body>
+     
+        <h1> Formulário de Exemplo</h1>
+        <form action="#"> 
+
+        <div> 
+            <label for="name" >Nome:</label>
+            <input type="text" id="name" name="name" required/>   
+        </div> 
+
+        <div>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required/>
+        </div>
+
+        <div>
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required/>
+        </div>
+
+        <div>
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" name="idade" min="0" max="100" required/>
+        </div>
+
+        <div> 
+            <label for="genero">Gênero:</label>
+            <select id="genero" name="genero">
+                <option value="">Selecione</option>
+                <option value="masculino">Masculino</option>
+                <option value="feminino">Feminino</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="termos">Aceito os termos: </label>
+            <input type="checkbox" id="termos" name="termos" checked/>
+        </div>
+
+        <div> 
+            <label for="cor">Cor favorita:</label>
+            <input type="color" id="cor" name="cor"/>
+        </div>
+
+        <div>
+            <label for="anexo">Anexar arquivo: </label>
+            <input type="file" id="anexo" name="anexo"/>
+        </div>
+
+        <div>
+            <label for="comentario">Comentário:</label>
+            <textarea id="comentario" name="comentario" rows="4" cols="50"> </textarea>
+        </div>
+
+        <div> 
+            <input type="submit" value="Enviar"/>
+        </div>
+
+        </form>
+
+
+
+
+</body>
+</html>

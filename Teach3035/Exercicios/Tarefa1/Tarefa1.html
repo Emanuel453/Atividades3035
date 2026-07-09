@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Emanuel Domingos">
+    <meta name="description" content="Projeto final do curso de HTML">
+    <title>Projeto Final</title>
+</head>
+
+<body style="background-color: #3e3f42;">
+
+
+    <header
+        style="background-color: #1e2a4a; width: 600px; font-family: sans-serif; margin-left:auto; margin-right:auto; padding: 20px; border-radius:10px; margin-top:50px; margin-bottom: 10px;">
+        <h1 style="text-align: left; color: white; font-weight: bold;">Meu Projeto Final de HTML</h1>
+        <nav>
+            <ul style="list-style: none; display: flex; justify-content:flex-start; gap:20px;padding:0px;">
+                <li><a href="#sobre" style="color: #d4ff3f; text-decoration: underline;">Sobre</a></li>
+                <li><a href="#midias" style="color: #d4ff3f; text-decoration: underline;">Mídias</a></li>
+                <li><a href="#tabelas" style="color: #d4ff3f; text-decoration: underline;">Tabelas</a></li>
+                <li><a href="#formularios" style="color: #d4ff3f; text-decoration: underline;">Formulários</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section style="font-family: sans-serif;">
+            <article id="sobre"
+                style="background-color: rgb(255, 255, 255); width: 600px; margin-left:auto; margin-right:auto; padding: 20px; border-radius:20px; border: 1px solid #ddd; margin-top:50px;">
+                <h1>Sobre este projeto</h1>
+                <p>Este documento reúne, em um único arquivo, <b>HTML</b>, os principais
+                    conceitos estudados no curso:
+                    elementos de texto, tabelas, formulários,mídias,atributos e boas práticas de <i>acessibilidade.</i>
+                </p>
+                </p>
+
+                <span>Trecho com <mark style="background-color: rgb(235, 235, 196);">texto em linha destacado</mark>
+                    usando a tag <code>&lt;span&gt;</code></span>
+
+                <h2>Oque esse projeto cobre</h2>
+
+                <ul>
+                    <li>Estrutura Básica do HTML (doctype,head,body)</li>
+                    <li>Tags estruturais semânticas</li>
+                    <li>Formatação e hierarquia de textos</li>
+                    <li>Tabela acessível com <code>scope</code></li>
+                    <li>Formulário completo com <code>label </code><code>fieldset</code> e <code>output</code></li>
+                    <li>Imagem,vídeo e aúdio</li>
+                </ul>
+
+                <h2>Ordem de estudo sugerida</h2>
+
+                <ol>
+                    <li>Estrutura Básica</li>
+                    <li>Tags estruturais</li>
+                    <li>Elementos de texto</li>
+                    <li>Tabelas e formulários</li>
+                    <li>Mídias e acessibilidade</li>
+                </ol>
+
+                <p>Direitos reservados a &copy; Teach3035. Use sempre <code>&amp;copy;</code>
+                    e <code>&amp;npsb; </code>
+                    quando precisar desses símbolos, já que os sinais &lt; e &gt; sozinhos podem ser
+                    confudido com tags pelo navegador.</p>
+
+            </article>
+
+            <article id="midias"
+                style="background-color: rgb(255, 255, 255); width: 600px; margin-left:auto; margin-right:auto; padding: 20px; border-radius:20px; border: 1px solid #ddd; margin-top:50px;">
+                <h1>Mídias</h1>
+                <h2>Imagem</h2>
+                <img src="./free_fire.jpg" alt="imagem de free fire" width="300px" height="200px" />
+                <p style="font-size: 13px; color:#5a5a5a">Exemplo do elemento <code>&lt;img&gt; com atributo alt</code>
+                </p>
+                <h2>Vídeo</h2>
+                <video controls="controls" width="300px" height="200px">
+                    <source src="./Logica.mp4" type="video/mp4" alt="Vídeo sobre lógica de programação" />
+                </video>
+
+                <h2>Áudio</h2>
+                <audio controls="controls">
+                    <source src="./API.mp3" type="audio/mp3" alt="Áudio sobre API" />
+                </audio>
+            </article>
+
+            <article id="tabelas"
+                style="background-color: rgb(255, 255, 255); width: 600px; margin-left:auto; margin-right:auto; padding: 20px; border-radius:20px; border: 1px solid #ddd; margin-top:50px;">
+                <h1>Tabela: conteúdos estudados</h1>
+                <table border="1" style="border-collapse: collapse">
+                    <caption>Resumo dos módulos do curso</caption>
+                    <thead>
+                        <tr style="background-color: #d4ff3f; text-align: left;">
+                            <th scope="col">Módulo</th>
+                            <th scope="col">Tema Principal</th>
+                            <th scope="col">Nível</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Tags</td>
+                            <td>Estrutura e aninhamento</td>
+                            <td>Básico</td>
+                        </tr>
+
+                        <tr>
+                            <td>Formulários</td>
+                            <td>Envio de dados(GET,POST)</td>
+                            <td>intermediário</td>
+                        </tr>
+
+                        <tr>
+                            <td>Acessibilidade</td>
+                            <td>WAI-ARIA e HTML semântico</td>
+                            <td>Intermediário</td>
+                        </tr>
+
+
+                        <tr>
+                            <td colspan="2">Caracteres Reservados</td>
+                            <td>Básico</td>
+                        </tr>
+                    </tbody>
+
+                    <tfoot>
+                        <tr style="background-color: #e9e6e6;">
+                            <td colspan="3"><i>Tabela gerada como exercício de fixação.</i></td>
+                        </tr>
+                    </tfoot>
+
+                </table>
+            </article>
+
+            <article id="formularios"
+                style="background-color: rgb(255, 255, 255); width: 600px; margin-left:auto; margin-right:auto; padding: 20px; border-radius:20px; border: 1px solid #ddd; margin-top:50px;">
+                <h1>Formulário de contato</h1>
+                <form action="#">
+                    <fieldset
+                        style="width: 550px; margin-left:auto; margin-right:auto; padding: 20px; border: 1px solid #9c9c9c; margin-top:30px;">
+                        <legend>Dados Pessoais</legend>
+                        <label for="name">Nome:</label>
+                        <br />
+                        <input type="text" id="name" name="name" required placeholder="Digete seu nome" />
+                        <br />
+                        <label for="email">E-mail:</label>
+                        <br />
+                        <input type="email" id="email" name="email" required placeholder="Digite seu email" />
+                        <br />
+
+                        <label for="pais">País:</label>
+                        <br />
+                        <select id="pais" name="pais">
+                            <option value="">Selecione</option>
+                            <optgroup label="America do Sul" style="font-weight: bold;">
+                                <option value="Brasil">Brasil</option>
+                                <option value="Argentina">Argentina</option>
+                            </optgroup>
+                            <optgroup label="Europa" style="font-weight: bold;">
+                                <option value="Portugal">Portugal</option>
+                                <option value="Espanha">Espanha</option>
+                            </optgroup>
+                        </select>
+                    </fieldset>
+
+                    <fieldset
+                        style="width: 550px; margin-left:auto; margin-right:auto; padding: 20px; border: 1px solid #9c9c9c; margin-top:30px;">
+                        <legend>Nível de conhecimento em HTML</legend>
+                        <label for="iniciante">Iniciante</label>
+                        <input type="radio" id="iniciante" name="nivel" value="iniciante" />
+                        <br />
+                        <label for="intermediario">Intermediário</label>
+                        <input type="radio" id="intermediario" name="nivel" value="intermediario" />
+                        <br />
+                        <label for="avancado">Avançado</label>
+                        <input type="radio" id="avancado" name="nivel" value="avancado" checked />
+                    </fieldset>
+
+                    <fieldset
+                        style="width: 550px; margin-left:auto; margin-right:auto; padding: 20px; border: 1px solid #9c9c9c; margin-top:30px;">
+                        <legend>Preferências</legend>
+                        <label for="check">Quero receber novidades do curso</label>
+                        <input type="checkbox" id="check" name="check" checked />
+                    </fieldset>
+
+                    <div style="width: 550px; margin: 0px; margin-top: 30px;">
+                        <label for="mensagem">Mensagem:</label>
+                        <br />
+                        <textarea id="mensagem" name="mensagem" rows="4" cols="50"
+                            placeholder="Escreva aqui sua dúvida ou comentário"></textarea>
+                    </div>
+
+                    <fieldset
+                        style="width: 550px; margin-left:auto; margin-right:auto; padding: 20px; border: 1px solid #9c9c9c; margin-top:30px;">
+                        <legend>Horas de estudo por dia</legend>
+                        <label for="horas">Horas:</label>
+                        <input type="number" id="horas" name="horas" min="0" max="8">
+                    </fieldset>
+
+                    <div style="margin: 0px; margin-top: 20px;">
+                        <input type="submit" value="Enviar"
+                            style="background-color: #1e2a4a; color:#ddd; width: 80px; border-radius: 10px;  padding:10px" />
+                    </div>
+
+                </form>
+            </article>
+        </section>
+    </main>
+
+    <footer
+        style="background-color: #1e2a4a; color: white; width: 600px; font-family: sans-serif; margin-left:auto; margin-right:auto; padding: 30px; border-radius:10px; margin-top:50px; margin-bottom: 10px;font-weight: bold;">
+        <p>Projeto criado para praticar os conceitos aplicados no módulo de HTML.</p>
+        <p>&copy 2026 Projeto de Estudos. Todos os direitos reservados.</p>
+    </footer>
+
+
+</body>
+
+</html>
