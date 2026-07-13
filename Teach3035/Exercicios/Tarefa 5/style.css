@@ -1,0 +1,67 @@
+body {
+    background-image: linear-gradient(to left, rgb(243, 207, 0), white);
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+    margin: 0;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+label {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #000000;
+}
+
+input {
+    padding: 12px;
+    margin: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+
+select {
+    background-color: #0099ff;
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+button {
+    background-color: #007bff;
+    cursor: pointer;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+#resultado {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
