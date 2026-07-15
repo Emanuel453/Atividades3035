@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Emanuel Domingos">
+    <meta name="description" content="Tarefa 6 proposta pela 3035teach">
+    <title>Tarefa 6</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+    <h1>Tarefas do Emanuel</h1>
+
+
+    <form>
+        <div>
+            <label for="tarefa">Tarefa: </label>
+            <input type="text" id="tarefa" placeholder="Nome da tarefa">
+        </div>
+
+        <div>
+            <label for="criacao">Criação: </label>
+            <input type="date" id="criacao">
+        </div>
+
+    </form>
+
+
+    <button onclick="adicionarTarefa()">Adicionar Tarefa</button>
+
+    <button id="filtro" onclick="alternarFiltro()">Mostrar apenas pendentes</button>
+
+    <div id="lista" class="lista-tarefas"></div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
