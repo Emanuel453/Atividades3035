@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Emanuel Domingos">
+  <meta name="description" content="Desafio Modulo 1 HTML,CSS,JavaScript">
+  <title>Desafio 1</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="js/clientes.js" defer></script>
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <img src="img/PetshopeLogo.png" alt="Logo da Petshope do Manu" />
+      <h1>PetShope do Manu</h1>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="clientes.html">Clientes</a></li>
+        <li><a href="produtos.html">Loja</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <article>
+        <h1>Clientes Cadastrados</h1>
+      </article>
+
+      <article>
+        <!-- Os cards dos clientes são criados dinamicamente pelo clientes.js -->
+        <div id="clientList"></div>
+
+        <!-- Modal com os detalhes do cliente, escondido até o usuário clicar num card -->
+        <div id="modal">
+          <div id="modalContent">
+            <span id="closeButton" onclick="closeModal()">&times;</span>
+            <h2>Detalhes do Atendimento</h2>
+            <p id="modalTutorName"></p>
+            <p id="modalTutorPhone"></p>
+            <p id="modalTutorAddress"></p>
+            <p id="modalPetAge"></p>
+            <p id="modalPetSize"></p>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>Projeto criado para praticar os conceitos aplicados no módulo de HTML, CSS e JavaScript.</p>
+    <p>&copy; 2026 Projeto de Estudos. Todos os direitos reservados ao aluno Emanuel Domingos.</p>
+  </footer>
+
+</body>
+
+</html>

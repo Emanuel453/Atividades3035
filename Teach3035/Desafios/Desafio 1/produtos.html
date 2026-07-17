@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Emanuel Domingos">
+  <meta name="description" content="Desafio Modulo 1 HTML,CSS,JavaScript">
+  <title>Desafio 1</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="js/produtos.js" defer></script>
+</head>
+
+<body>
+
+  <!-- Cabeçalho com logo e menu de navegação -->
+  <header>
+    <nav>
+      <img src="img/PetshopeLogo.png" alt="Logo da Petshope do Manu" />
+      <h1>PetShope do Manu</h1>
+
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="clientes.html">Clientes</a></li>
+        <li><a href="produtos.html">Loja</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+
+      <!-- Título da página de produtos -->
+      <article>
+        <h1>Nossos Produtos</h1>
+      </article>
+
+      <article>
+
+        <!-- Mensagem exibida quando um produto é adicionado ao carrinho -->
+        <p id="message"></p>
+
+        <!-- Lista de produtos -->
+        <div id="productList">
+
+          <!-- Card de produto -->
+          <div class="card">
+            <img src="img/RacaoGolden.jpg">
+            <h3>Ração Golden Especial Cães Adultos</h3>
+            <p>R$ 149.90</p>
+            <button type="button" onclick="addToCart(0)">Adicionar ao carrinho</button>
+          </div>
+
+          <!-- Card de produto -->
+          <div class="card">
+            <img src="img/RacaoFrango.jpg">
+            <h3>Ração Frango Sabor Especial</h3>
+            <p>R$ 138.90</p>
+            <button type="button" onclick="addToCart(1)">Adicionar ao carrinho</button>
+          </div>
+
+          <!-- Card de produto -->
+          <div class="card">
+            <img src="img/RacaoGato.jpg">
+            <h3>Ração Golden Gatos Castrados</h3>
+            <p>R$ 29.90</p>
+            <button type="button" onclick="addToCart(2)">Adicionar ao carrinho</button>
+          </div>
+
+          <!-- Card de produto -->
+          <div class="card">
+            <img src="img/Mordedor.jpg">
+            <h3>Brinquedo Mordedor</h3>
+            <p>R$ 19.90</p>
+            <button type="button" onclick="addToCart(3)">Adicionar ao carrinho</button>
+          </div>
+
+          <!-- Card de produto -->
+          <div class="card">
+            <img src="img/Coleira.jpg">
+            <h3>Coleira <br> Ajustável</h3>
+            <p>R$ 34.90</p>
+            <button type="button" onclick="addToCart(4)">Adicionar ao carrinho</button>
+          </div>
+
+          <!-- Card de produto -->
+          <div class="card">
+            <img src="img/Shampo.jpg">
+            <h3>Shampoo Neutro para Pets</h3>
+            <p>R$ 24.90</p>
+            <button type="button" onclick="addToCart(5)">Adicionar ao carrinho</button>
+          </div>
+
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <!-- Rodapé da página -->
+  <footer>
+    <p>Projeto criado para praticar os conceitos aplicados no módulo de HTML, CSS e JavaScript.</p>
+    <p>&copy; 2026 Projeto de Estudos. Todos os direitos reservados ao aluno Emanuel Domingos.</p>
+  </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Emanuel Domingos">
+  <meta name="description" content="Desafio Modulo 1 HTML,CSS,JavaScript">
+  <title>Desafio 1</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="js/cadastro.js" defer></script>
+</head>
+
+<body>
+
+  <!-- Cabeçalho com logo e menu de navegação -->
+  <header>
+    <nav>
+      <img src="img/PetshopeLogo.png" alt="Logo PetShope do Manu">
+      <h1>PetShope do Manu</h1>
+
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="clientes.html">Clientes</a></li>
+        <li><a href="produtos.html">Loja</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Seção principal da página -->
+    <section id="hero">
+
+      <!-- Apresentação do Pet Shop -->
+      <article>
+        <h1>PetShope do Manu</h1>
+        <p>Aqui na PetShope Manu tudo é show, quando o seu pet entra seu latido é FECHOU!</p>
+      </article>
+
+      <!-- Formulário de cadastro -->
+      <article id="formSection">
+        <h2>Cadastro de Cliente</h2>
+
+        <form id="registrationForm">
+
+          <!-- Dados do tutor -->
+          <fieldset>
+
+            <legend>Dados do Tutor</legend>
+
+            <div class="field">
+              <label for="tutorName">Nome do tutor: </label>
+              <input type="text" id="tutorName" placeholder="Nome do tutor">
+            </div>
+
+            <div class="field">
+              <label for="tutorPhone">Telefone: </label>
+              <input type="text" id="tutorPhone" placeholder="Telefone">
+            </div>
+
+            <div class="field">
+              <label for="tutorAddress">Endereço: </label>
+              <input type="text" id="tutorAddress" placeholder="Endereço">
+            </div>
+
+            <div class="field">
+              <label for="appointmentDate">Data do atendimento: </label>
+              <input type="date" id="appointmentDate">
+            </div>
+
+          </fieldset>
+
+          <!-- Dados do animal -->
+          <fieldset>
+
+            <legend>Dados do Animal</legend>
+
+            <div class="field">
+              <label for="petName">Nome do animal: </label>
+              <input type="text" id="petName" placeholder="Nome do animal">
+            </div>
+
+            <div class="field">
+              <label for="petAge">Idade do animal: </label>
+              <input type="number" id="petAge" placeholder="Idade do animal">
+            </div>
+
+            <div class="field">
+              <label for="petSize">Porte do animal: </label>
+              <select id="petSize">
+                <option value="Pequeno">Pequeno</option>
+                <option value="Médio">Médio</option>
+                <option value="Grande">Grande</option>
+              </select>
+            </div>
+
+          </fieldset>
+
+          <!-- Botão que chama a função de cadastro -->
+          <button type="button" onclick="saveClient()">Cadastrar</button>
+
+        </form>
+
+        <!-- Mensagem exibida após o cadastro ser realizado -->
+        <div id="successMessage">
+          <h2>Cadastro realizado!</h2>
+          <p>O cliente <span id="confirmedName"></span> foi cadastrado com sucesso.</p>
+
+          <button type="button" onclick="newRegistration()">
+            Cadastrar outro cliente
+          </button>
+        </div>
+
+      </article>
+    </section>
+
+  </main>
+
+  <!-- Rodapé da página -->
+  <footer>
+    <p>Projeto criado para praticar os conceitos aplicados no módulo de HTML, CSS e JavaScript.</p>
+    <p>&copy; 2026 Projeto de Estudos. Todos os direitos reservados ao aluno Emanuel Domingos.</p>
+  </footer>
+
+</body>
+
+</html>
